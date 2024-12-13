@@ -1,0 +1,44 @@
+<form>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" required><br><br>
+        <label for="Apellidos">Apellidos: </label>
+        <input id="Apellidos" type="text" required><br><br>
+        <label for="Fecha">Fecha de nacimiento: </label>
+        <input id="Fecha" type="date"required><br><br>
+        <label for="Género">Género: </label><br>
+        <input type="radio" id="Masculino" name="Genero" value="Masculino" required>
+        <label for="Masculino">Masculino</label><br>
+        <input type="radio" id="Femenino" name="Genero" value="Femenino" required>
+        <label for="Femenino">Femenino</label><br>
+        <input type="radio" id="Otro" name="Genero" value="Otro" required>
+        <label for="Otro">Otro</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Información de contacto</legend><br>
+        <label for="email">Dirección de correo electrónico: </label>
+        <input id="email" type="email"required><br><br>
+        <label for="tel">Número de Teléfono: </label>
+        <input id="tel" type="tel"required><br><br>
+        <label for="Dirección">Dirección: </label>
+        <input id="Dirección" type="text"required>
+         <br><br>
+        <legend>Información de cuenta</legend><br>
+        <label for="user">Nombre de usuario: </label>
+        <input id="user" type="text"required><br><br>
+        <label for="cont">Contraseña: </label>
+        <input id="cont" type="password"required><br><br>
+        <label for="cont">Confirmar contraseña: </label>
+        <input id="cont" type="password"required><br><br>
+        <legend>Preferencias:</legend><br>
+        <label for="colour">Elige tu color favorito: </label>
+        <input type="checkbox" value="Rojo"> Rojo
+        <input type="checkbox" value="Azul"> Azul
+        <input type="checkbox" value="Verde"> Verde
+        <input type="checkbox" value="Amarillo"> Amarillo<br><br>
+        <input type="checkbox" id="suscripcion" name="suscripcion" value="aceptar">
+        <label for="suscripcion">Acepto los términos y condiciones</label>
+    </fieldset>  
+    <input type="submit" value="Enviar">
+</form>

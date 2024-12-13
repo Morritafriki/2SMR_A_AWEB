@@ -1,0 +1,64 @@
+/* -------General------------*/
+
+body{
+    margin: 0;
+    background-color: aliceblue;
+    font-family: "Montserrat", serif;
+  }
+
+a{
+    text-decoration: none; /*Quita subrayado de enlaces*/
+}
+/*---------Header-------*/
+.cabecera{
+    background-color: #010101;
+    display:flex; /*posiciona los elementos*/
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+} 
+
+.cabecera_logo{
+    width: 30%;
+}
+
+.cabecera_nav_list{
+    display: flex;
+}
+
+.cabecera_nav_list_enlace{
+    margin-right: 2rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.cabecera_nav_list_enlace:hover{
+    color: yellowgreen;
+}
+
+/*---------------------Seccion principal----------------*/
+.principal{
+    display: flex;
+    flex-direction: column; /*Con esto se ponen para abajo*/
+    margin-top: 3rem; /*Amplia margen de fuera*/
+    margin-bottom: 3rem;
+    align-items: center; /*alinea en el centro*/
+}
+
+.principal_titulo{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.principal_viajes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.principal_viajes_articulo{
+    width: 30%;
+}
+.principal_viajes_articulo_imag{
+    width: 100%;
+    border-radius: 1.2rem; /*redondea las imagenes*/
+}
