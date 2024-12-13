@@ -1,0 +1,39 @@
+/* -------General------------*/
+
+body{
+    margin: 0;
+    background-color: blanchedalmond;
+    font-family: "DM Sans", serif;
+  }
+
+a{
+    text-decoration: none; /*Quita subrayado de enlaces*/
+}
+/*---------Header-------*/
+.cabecera{ /*Para que cabecero ocupe el 20%*/
+    background-color: #010101;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.cabecera_figure{ 
+    margin: 0;
+    padding: 0;
+}
+
+
+.cabecera_logo{
+    width: 30%;
+}
+
+.cabecera_nav_list{
+    display: flex;
+}
+
+.cabecera_nav_list_enlace{
+    margin-right: 2rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+}

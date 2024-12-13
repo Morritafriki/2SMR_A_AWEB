@@ -46,13 +46,14 @@ a{
 
 .principal_titulo{
     width: 100%;
-    text-align: center;
+    text-align: center; /*centra el texto*/
     margin-bottom: 3rem;
 }
 .principal_viajes{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 5rem;
 }
 
 .principal_viajes_articulo{
@@ -61,4 +62,74 @@ a{
 .principal_viajes_articulo_imag{
     width: 100%;
     border-radius: 1.2rem; /*redondea las imagenes*/
+}
+
+.principal_viajes_articulo_contenedor{
+    display: flex; /*con esto se puede mover cosas*/
+    justify-content: space-between; /*pone elementos en los bordes*/
+    align-items: center;
+}
+
+.principal_viajes_articulo_contenedor_text{
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 70%;
+}
+
+.principal_viajes_articulo_contenedor_enlace{
+    background-color: grey;
+    color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+    font-size: 1.1rem;
+    margin-left: 0.75rem;
+    text-align: center;
+}
+.principal_viajes_articulo_contenedor_enlace:hover{
+    background-color: #010101;
+}
+
+.principal_contacto{
+    width: 100%;
+    background-color: #010101;
+}
+.principal_contacto_form_cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0;
+    align-items: center; /*centra los elementos en funcion de contenedor*/
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+} 
+.principal_contacto_form_cont_titulo{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.principal_contacto_form_cont_div{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.principal_contacto_form_cont_div_email{
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 0;
+    font-size: 0.9rem;
+}
+.principal_contacto_form_cont_div_boton{
+    padding: 0.5rem;
+    border: 0;
+    text-align: center;
+    border-radius: 0.35rem;
+    background-color: gray;
+    color: aliceblue;
+    font-size: 0.9rem;
+}
+.principal_contacto_form_cont_div_boton:hover{
+    background-color: yellowgreen;
+    color: #010101;
 }

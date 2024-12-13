@@ -1,0 +1,45 @@
+/* -------General------------*/
+
+body{
+    margin: 0;
+    background-color: blanchedalmond;
+    font-family: "Montserrat", sans-serif;
+  }
+
+a{
+    text-decoration: none; /*Quita subrayado de enlaces*/
+}
+/*---------Header-------*/
+.cabecera{
+    background-color: #010101;
+    text-align: center;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.cabecera_logo{
+    max-width: 30%;
+    height: 30%;
+    position: center;
+}
+.cabecera_nav{
+    background-color: gray;
+    padding: 0.5%;
+    margin: 0%;
+    text-decoration: none;
+}
+.cabecera_nav_list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+.cabecera_nav_list_enlace{
+    display: block;
+    font-size: 1.70rem;
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 1.25rem;
+}
