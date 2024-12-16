@@ -152,16 +152,44 @@ a{
 }
 .banner{
     width: 100%;
-    height: 30rem;
+    height: 25rem;
     margin: 0;
-    background-image: url(https://raw.githubusercontent.com/martalopezron92/css/refs/heads/main/img/logo.jpg);
-    background-size: auto 100%;
-    background-repeat: repeat-x;
-
+    display: flex;
 }
 .banner_titulo{
-    margin: 2rem;
+    width: 70%;
+    margin: 0rem;
     text-align: center;
     font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url(https://raw.githubusercontent.com/martalopezron92/css/refs/heads/main/img/logo.jpg);
+    background-position: -5rem;
+    background-size: 45rem;
+    background-repeat: repeat-x;
+    padding-top: 2rem;
+}
+.banner_lista{
+    width: 30%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    list-style: none;
+}
+.banner_lista_titulo{
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.banner_lista_enlace{
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+    color: #010101;
+}
+.banner_lista_enlace:hover{
     font-weight: bold;
 }

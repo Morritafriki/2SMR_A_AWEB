@@ -1,0 +1,316 @@
+/* -------General------------*/
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: "Montserrat", serif;
+}
+
+a {
+    text-decoration: none; /*Quita subrayado de enlaces*/
+}
+
+/*---------Header-------*/
+.cabecera {
+    background-color: #010101;
+    display: flex; /*posiciona los elementos*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* Espaciado adicional */
+}
+
+.cabecera_logo {
+    width: 30%;
+    max-width: 150px; /* Controlamos el tamaño máximo de la imagen */
+}
+
+.cabecera_nav_list {
+    display: flex;
+}
+
+.cabecera_nav_list_enlace {
+    margin-right: 2rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.cabecera_nav_list_enlace:hover {
+    color: yellowgreen;
+}
+
+/*---------------------Seccion principal----------------*/
+.principal {
+    display: flex;
+    flex-direction: column; /*Con esto se ponen para abajo*/
+    margin-top: 3rem; /*Amplia margen de fuera*/
+    align-items: center; /*alinea en el centro*/
+}
+
+.principal_titulo {
+    width: 100%;
+    text-align: center; /*centra el texto*/
+    margin-bottom: 3rem;
+}
+
+.principal_viajes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5rem;
+    flex-wrap: wrap; /* Permite que los artículos se ajusten cuando la pantalla sea más pequeña */
+}
+
+.principal_viajes_articulo {
+    width: 30%;
+    margin-bottom: 2rem;
+    /* Asegura que los artículos no se desborden */
+}
+
+.principal_viajes_articulo_imag {
+    width: 100%;
+    border-radius: 1.2rem; /*redondea las imagenes*/
+}
+
+.principal_viajes_articulo_contenedor {
+    display: flex; /*con esto se puede mover cosas*/
+    justify-content: space-between; /*pone elementos en los bordes*/
+    align-items: center;
+}
+
+.principal_viajes_articulo_contenedor_text {
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 70%;
+}
+
+.principal_viajes_articulo_contenedor_enlace {
+    background-color: grey;
+    color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+    font-size: 1.1rem;
+    margin-left: 0.75rem;
+    text-align: center;
+}
+
+.principal_viajes_articulo_contenedor_enlace:hover {
+    background-color: #010101;
+}
+
+.principal_contacto {
+    width: 100%;
+    background-color: #010101;
+}
+
+.principal_contacto_form_cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0;
+    align-items: center; /*centra los elementos en funcion de contenedor*/
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.principal_contacto_form_cont_titulo {
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.principal_contacto_form_cont_div {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.principal_contacto_form_cont_div_email {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 0;
+    font-size: 0.9rem;
+}
+
+.principal_contacto_form_cont_div_boton {
+    padding: 0.5rem;
+    border: 0;
+    text-align: center;
+    border-radius: 0.35rem;
+    background-color: gray;
+    color: aliceblue;
+    font-size: 0.9rem;
+}
+
+.principal_contacto_form_cont_div_boton:hover {
+    background-color: yellow;
+    color: #010101;
+}
+
+/*--------------------------Footer-------------------------*/
+.pie_pagina {
+    width: 100%;
+    background-color: gray;
+}
+
+.pie_pagina_lista {
+    margin: 0;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.pie_pagina_lista_enlace {
+    color: #010101;
+}
+
+.pie_pagina_lista_enlace:hover {
+    font-weight: bold;
+}
+
+/* ---------------------- Banner -------------------------*/
+.banner {
+    width: 100%;
+    height: 25rem;
+    margin: 0;
+    display: flex;
+}
+
+.banner_titulo {
+    width: 70%;
+    margin: 0rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url(https://raw.githubusercontent.com/martalopezron92/css/refs/heads/main/img/logo.jpg);
+    background-position: -5rem;
+    background-size: 45rem;
+    background-repeat: repeat-x;
+    padding-top: 2rem;
+}
+
+.banner_lista {
+    width: 30%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    list-style: none;
+}
+
+.banner_lista_titulo {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.banner_lista_enlace {
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+    color: #010101;
+}
+
+.banner_lista_enlace:hover {
+    font-weight: bold;
+}
+
+/* ---------------------- Media Queries -------------------------*/
+/* Pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+    /* Header: ajustamos la imagen y la navegación */
+    .cabecera {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecera_logo {
+        width: 50%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    .cabecera_nav_list {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .cabecera_nav_list_enlace {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    /* Principal: Ajustamos los artículos */
+    .principal_viajes {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .principal_viajes_articulo {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .principal_viajes_articulo_imag {
+        width: 100%;
+    }
+
+    /* Ajustamos los formularios y los textos */
+    .principal_contacto_form_cont_div {
+        width: 80%;
+    }
+
+    .principal_contacto_form_cont_titulo {
+        font-size: 1.3rem;
+    }
+
+    .principal_contacto_form_cont_div_email,
+    .principal_contacto_form_cont_div_boton {
+        font-size: 1rem;
+    }
+
+    /* Banner: Ajustamos la distribución */
+    .banner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .banner_titulo {
+        width: 100%;
+        background-size: 100%;
+        font-size: 1.2rem;
+    }
+
+    .banner_lista {
+        width: 100%;
+    }
+
+    .pie_pagina_lista {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .pie_pagina_lista_enlace {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Pantallas medianas (768px - 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .principal_viajes {
+        flex-wrap: wrap;
+    }
+
+    .principal_viajes_articulo {
+        width: 45%; /* Dos columnas en pantallas medianas */
+    }
+
+    .principal_viajes_articulo_imag {
+        width: 100%;
+    }
+}
